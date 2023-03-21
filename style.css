@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+    min-height: 100vh;
+}
+.subnav {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: subnav360 2s linear infinite;
+}
+@keyframes subnav360 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+.nav {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-left: 400px;
+    animation: navlike 0.5s linear infinite;
+}
+@keyframes navlike {
+    0% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
